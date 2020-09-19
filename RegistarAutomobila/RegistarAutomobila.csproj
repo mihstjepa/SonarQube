@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8AB4F80A-80AB-4D7B-A813-D5D67EEE9355}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RegistarAutomobila</RootNamespace>
+    <AssemblyName>RegistarAutomobila</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forme\Ažuriranje\FrmAzuriranjeKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Ažuriranje\FrmAzuriranjeKorisnika.Designer.cs">
+      <DependentUpon>FrmAzuriranjeKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Ažuriranje\FrmAzuriranjeMarke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Ažuriranje\FrmAzuriranjeMarke.Designer.cs">
+      <DependentUpon>FrmAzuriranjeMarke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Ažuriranje\FrmAzuriranjeModela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Ažuriranje\FrmAzuriranjeModela.Designer.cs">
+      <DependentUpon>FrmAzuriranjeModela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Ažuriranje\FrmAzuriranjeUloge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Ažuriranje\FrmAzuriranjeUloge.Designer.cs">
+      <DependentUpon>FrmAzuriranjeUloge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Dodavanje\FrmDodajKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Dodavanje\FrmDodajKorisnika.Designer.cs">
+      <DependentUpon>FrmDodajKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Dodavanje\FrmDodajMarku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Dodavanje\FrmDodajMarku.Designer.cs">
+      <DependentUpon>FrmDodajMarku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Dodavanje\FrmDodajModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Dodavanje\FrmDodajModel.Designer.cs">
+      <DependentUpon>FrmDodajModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Dodavanje\FrmDodajUlogu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Dodavanje\FrmDodajUlogu.Designer.cs">
+      <DependentUpon>FrmDodajUlogu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FrmGlavniIzbornik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FrmGlavniIzbornik.Designer.cs">
+      <DependentUpon>FrmGlavniIzbornik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Čitanje\FrmMarkeAutomobila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Čitanje\FrmMarkeAutomobila.Designer.cs">
+      <DependentUpon>FrmMarkeAutomobila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Čitanje\FrmModeliAutomobila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Čitanje\FrmModeliAutomobila.Designer.cs">
+      <DependentUpon>FrmModeliAutomobila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FrmPrijava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FrmPrijava.Designer.cs">
+      <DependentUpon>FrmPrijava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Čitanje\FrmUloge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Čitanje\FrmUloge.Designer.cs">
+      <DependentUpon>FrmUloge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Čitanje\FrmUpravljanjeKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Čitanje\FrmUpravljanjeKorisnika.Designer.cs">
+      <DependentUpon>FrmUpravljanjeKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modeli\Korisnik.cs">
+      <DependentUpon>RegistarAutomobilaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modeli\LoginPodaci.cs" />
+    <Compile Include="Modeli\MarkaAutomobila.cs">
+      <DependentUpon>RegistarAutomobilaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modeli\ModelAutomobila.cs">
+      <DependentUpon>RegistarAutomobilaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Modeli\RegistarAutomobilaModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistarAutomobilaModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modeli\RegistarAutomobilaModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistarAutomobilaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modeli\RegistarAutomobilaModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistarAutomobilaModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Modeli\Uloga.cs">
+      <DependentUpon>RegistarAutomobilaModel.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forme\Ažuriranje\FrmAzuriranjeKorisnika.resx">
+      <DependentUpon>FrmAzuriranjeKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Ažuriranje\FrmAzuriranjeMarke.resx">
+      <DependentUpon>FrmAzuriranjeMarke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Ažuriranje\FrmAzuriranjeModela.resx">
+      <DependentUpon>FrmAzuriranjeModela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Ažuriranje\FrmAzuriranjeUloge.resx">
+      <DependentUpon>FrmAzuriranjeUloge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Dodavanje\FrmDodajKorisnika.resx">
+      <DependentUpon>FrmDodajKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Dodavanje\FrmDodajMarku.resx">
+      <DependentUpon>FrmDodajMarku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Dodavanje\FrmDodajModel.resx">
+      <DependentUpon>FrmDodajModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Dodavanje\FrmDodajUlogu.resx">
+      <DependentUpon>FrmDodajUlogu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FrmGlavniIzbornik.resx">
+      <DependentUpon>FrmGlavniIzbornik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Čitanje\FrmMarkeAutomobila.resx">
+      <DependentUpon>FrmMarkeAutomobila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Čitanje\FrmModeliAutomobila.resx">
+      <DependentUpon>FrmModeliAutomobila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FrmPrijava.resx">
+      <DependentUpon>FrmPrijava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Čitanje\FrmUloge.resx">
+      <DependentUpon>FrmUloge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Čitanje\FrmUpravljanjeKorisnika.resx">
+      <DependentUpon>FrmUpravljanjeKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EntityDeploy Include="Modeli\RegistarAutomobilaModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RegistarAutomobilaModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Modeli\RegistarAutomobilaModel.edmx.diagram">
+      <DependentUpon>RegistarAutomobilaModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Multimedija\icon.ico" />
+    <Content Include="Modeli\RegistarAutomobilaModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>RegistarAutomobilaModel.Context.cs</LastGenOutput>
+      <DependentUpon>RegistarAutomobilaModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Modeli\RegistarAutomobilaModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RegistarAutomobilaModel.edmx</DependentUpon>
+      <LastGenOutput>RegistarAutomobilaModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
